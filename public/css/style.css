@@ -1,0 +1,27 @@
+body { 
+    margin: 0;
+    background-color: blueviolet;
+
+
+}
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(../img/coworking-portrait.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (orientation: landscape) {
+    .container {
+        background-image: url(/medias-queries/public/img/coworking-paysage.jpg);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        background-size: 50vh;
+        background-size: 100vw;
+    }
+}
