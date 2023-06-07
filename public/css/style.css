@@ -1,7 +1,6 @@
 body { 
     margin: 0;
-    background-color: blueviolet;
-
+    background-color: rgb(0, 0, 0);
 
 }
 
@@ -11,6 +10,9 @@ body {
     background-image: url(../img/coworking-portrait.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
 }
 
 @media screen and (orientation: landscape) {
@@ -25,3 +27,68 @@ body {
         background-size: 100vw;
     }
 }
+
+.zones {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.zone1 {
+    background-color: gray;
+    width: 100vw;
+}
+
+.zone2 {
+    background-color: gray;
+    width: 100vw;
+}
+
+@media screen and (min-width: 1024px) {
+    .zones {
+        flex-direction: row;
+
+    }
+    .zone1 .zone2 {
+        width: 50vw;
+    }
+}
+
+li {
+    list-style: none;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    align-content: center;
+    background-color: burlywood;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    position: relative;
+}
+
+@media screen and (min-width: 576px) {
+    .footer ol {
+        display: flex;
+        }
+    li {
+        width: 25vw
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+ol {
+    padding: 0;
+}
+
